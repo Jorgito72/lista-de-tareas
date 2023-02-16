@@ -1,3 +1,5 @@
+
+
 const input = document.querySelector('input');
 const btnAdd = document.getElementById('button-add');
 const ul = document.querySelector('ul');
@@ -10,14 +12,13 @@ btnAdd.addEventListener('click', (e) => {
     const p = document.createElement('p');
 
     if (textTarea !== "") {
-        p.textContent = textTarea ;
+        p.textContent = textTarea;
 
-        li.appendChild(p);
-        li.className= "list-group-item"
         li.appendChild(addDeleteBtn());
-       
+        li.appendChild(p);
+        li.className = "list-group-item"
         ul.appendChild(li);
-       
+
         input.value = "";
 
         empty.style.display = "none";
@@ -26,7 +27,9 @@ btnAdd.addEventListener('click', (e) => {
 function addDeleteBtn() {
     const deleteBtn = document.createElement('button');
 
-    deleteBtn.textContent = "X", className = "btn-Delete ";
+    deleteBtn.textContent = "X";
+    deleteBtn.className = "btn-Delete";
+    
     deleteBtn.addEventListener('click', (e) => {
         const item = e.target.parentElement;
         ul.removeChild(item);

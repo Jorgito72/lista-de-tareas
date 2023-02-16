@@ -1,0 +1,15 @@
+.container{
+    background-color: rgb(92, 233, 198);
+    padding-bottom: 20px;
+
+}
+.btn-Delete{
+    float: right;
+    background-color: brown;
+}
+#button-add{
+    background-color: rgb(143, 198, 229);
+}
+h1{
+    text-align: center;
+}
